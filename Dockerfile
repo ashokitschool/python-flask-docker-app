@@ -8,6 +8,7 @@ WORKDIR /app
 
 EXPOSE 5000
 
+RUN pip install -U  --upgrade pip
 RUN pip install -r requirements.txt
 
 ENTRYPOINT ["python", "app.py"]
